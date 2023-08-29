@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(185, 185, 185) 60%, rgba(0, 0, 0, 0.74));
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:visited{
+            color:rgb(92, 92, 92);
+            font-weight: lighter;
+            text-shadow: 1px 1px 1px goldenrod;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: goldenrod;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+        }
+        a:active{
+            color: white;
+        }
+        a::after{
+            content: '[link]';
+            color: rgba(0, 0, 0, 0.5);
+            font-size: small;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    
+   <!--
+    Seletores Personalizados:
+    ------------------------
+    Pseudo classe = " : "
+    Pseudo Elemnto = " :: " 
+    ID = " # "
+    Classe = " . "
+    Children = " > " 
+    ------------------------
+    -->
+
+    <li><a href="https://www.facebook.com" target="_blank" rel="external">Facebook</a></li>
+    <li><a href="https://www.twitter.com" target="_blank" rel="external">X</a></li>
+    <li><a href="https://www.instagram.com" target="_blank" rel="external">Instagram</a></li>
+    <li><a href="https://www.youtube.com" targer ="_blank" rel="external">Certeza</a></li>
+</body>
+</html>

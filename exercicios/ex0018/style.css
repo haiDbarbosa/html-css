@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@font-face {
+    font-family: lemon;
+    src: url(fonts/LEMONMILK-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+        html {
+            min-height: 100%;
+        }
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+            background-image: linear-gradient(to bottom, rgb(250, 255, 249) 30%, rgb(94, 133, 89) 90%);
+        }
+        main {
+            background-color: white;
+            width: 640px;
+            padding: 25px;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+        }
+        h1 {
+            background-color: rgb(94, 133, 89);
+            width: auto;
+            font-family: 'lemon', sans-serif;
+            font-size: 4em;
+            text-align: center;
+            font-weight: normal;
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+        }
+        p {
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.2em;
+            text-align: center;
+        }
