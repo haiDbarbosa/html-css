@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background imgs</title>
+    <style>
+        body{
+            background-image: url(imagens/pattern004.png);
+        }
+
+        .line{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10rem;
+        }
+
+        .quadrado{
+            display: flex;            
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: gray;
+
+        }
+
+        #q1{
+            background-color: yellowgreen;
+            flex-grow: 0;
+            flex-basis: 300;
+        }
+
+        #q2{
+            background-image: linear-gradient(to bottom, yellowgreen 60%, orange);
+            flex-grow: 1;
+            flex-basis: 300;
+        }
+
+        #q3{
+            background-image: url(imagens/pattern002.png);
+            flex-grow: 1;
+            flex-basis: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="line">
+        <div class="quadrado" id="q1">
+        
+        </div>
+        <div class="quadrado" id="q2">
+        </div>
+        <div class="quadrado" id="q3">
+        </div>
+    </div>
+</body>
+</html>
