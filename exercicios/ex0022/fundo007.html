@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralização com translate</title>
+    <style>
+        #container{
+            background-color: blueviolet;
+            width: 99vw;
+            height: 97vh;
+            position: relative;
+        }
+
+        #box{
+            background-color: yellowgreen;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box"></div>
+    </div>
+</body>
+</html>
