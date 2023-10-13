@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 
 
 :root {
     --fonte1: Verdana, Geneha, Tahoma, sans-serif;
     --fonte2: 'Passion one', cursive;
     --fonte3: 'Sriracha', cursive;
+    --fonte4: 'Love Ya Like A Sister', cursive;
 
     --cor1:#F2E6D8;
     --cor2:#D99962;
@@ -32,7 +34,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
+    min-height: 40vh;
     line-height: 3rem;
 }
 
@@ -63,9 +65,8 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 50px;
-    font-family: var(--fonte3);
+    font-family: var(--fonte4);
     font-size: 1.5rem;
-    text-align: justify;
 }
 
 section p {
@@ -74,25 +75,36 @@ section p {
 
 section.normal {
     background-color: var(--cor4);
+    color: var(--cor3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.151);
 }
 
 section.imagem {
     background-color: #1b1b1b;
     color: var(--cor1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.568) inset;
+    background: fixed;
 }
 
 section.imagem p{
-    background-color: rgba(0, 0, 0, 0.349);
-    width: 300px;
+    background-color: #8c634ab9;
+    width: max-content;
+    padding: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
     display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+    border-radius: 3px;
 }
 
-section#img01 {
-    background-image: url(desafios\des12\imagens\background001.jpg);
+section#img1{
+    background-image: url(../imagens/flor.jpg);
+    background-position: center bottom;
+    background-size: cover;
 }
 
-#img02 {
-    background-image: url(desafios\des12\imagens\background002.jpg);
+section#img2{
+    background-image: url(../imagens/carta1.jpg);
+    background-size: cover;
 }
 
 footer {
@@ -100,4 +112,28 @@ footer {
     color: var(--cor2);
     padding: 10px;
     text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.103);
+}
+
+@media (max-width: 700px) {
+    section {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    header {
+        min-height: 10vh;
+    }
+
+    header h1 {
+        padding-top: 20px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    section#img2{
+        background-position: center center;
+    }
 }
