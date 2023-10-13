@@ -6,6 +6,11 @@
     --fonte1: Verdana, Geneha, Tahoma, sans-serif;
     --fonte2: 'Passion one', cursive;
     --fonte3: 'Sriracha', cursive;
+
+    --cor1:#F2E6D8;
+    --cor2:#D99962;
+    --cor3:#8C634A;
+    --cor4:#c5a795;
 }
 
 * {
@@ -22,8 +27,8 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background-color: var(--cor1);
+    color: var(--cor2);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -44,13 +49,13 @@ header h2 {
 
 header a, footer a {
     text-decoration: none;
-    color: white;
+    color: var(--cor3);
     font-weight: 600;
 }
 
 header a:hover, footer a:hover {
     text-decoration: underline;
-    color: white;
+    color: var(--cor2);
 }
 
 section {
@@ -63,13 +68,17 @@ section {
     text-align: justify;
 }
 
+section p {
+    padding-bottom: 1.5em;
+}
+
 section.normal {
-    background-color: #fff;
+    background-color: var(--cor4);
 }
 
 section.imagem {
     background-color: #1b1b1b;
-    color: #fff;
+    color: var(--cor1);
 }
 
 section.imagem p{
@@ -78,9 +87,17 @@ section.imagem p{
     display: inline-block;
 }
 
+section#img01 {
+    background-image: url(desafios\des12\imagens\background001.jpg);
+}
+
+#img02 {
+    background-image: url(desafios\des12\imagens\background002.jpg);
+}
+
 footer {
-    background-color: black;
-    color: #fff;
+    background-color: var(--cor1);
+    color: var(--cor2);
     padding: 10px;
     text-align: center;
 }
