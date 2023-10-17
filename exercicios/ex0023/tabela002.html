@@ -11,13 +11,36 @@
             font-family: 'Courier New', Courier, monospace;
         }
         table{
-            width: 300px;
+            position: relative;
+            width: 500px;
             border-collapse: collapse;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            border-bottom: 2px solid black;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
         }
         td, th{
             border: 2px solid black;
             padding: 10px;
-
+            text-align: left;
+        }
+        td.num{
+            text-align: right;
+        }
+        th{
+            background-color: grey;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 2rem;
+            background-color: lightgray;
         }
     </style>
 
@@ -35,11 +58,12 @@
                 <tr> <td> <th>
     -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col" style="width: 300px;">Estado</th>
+                <th scope="col" style="width: 190px;">População</th>
             </tr>
         </thead>
 
@@ -47,144 +71,143 @@
             <tr>
                 <th>1</th>
                 <td>São Paulo</td>
-                <td>44 420 459</td>
+                <td class="num">44 420 459</td>
             </tr>
             <tr>
                 <th>2</th>
-                <td>São Paulo</td>
-                <td>20 538 718</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
             </tr> 
             <tr>
                 <th>3</th>
-                <td>São Paulo</td>
-                <td>16 054 524</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
             </tr> 
             <tr>
                 <th>4</th>
-                <td>São Paulo</td>
-                <td>14 136 417</td>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
             </tr> 
             <tr>
                 <th>5</th>
-                <td>São Paulo</td>
-                <td>11 443 208</td>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
             </tr> 
             <tr>
                 <th>6</th>
-                <td>São Paulo</td>
-                <td>10 880 506</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
             </tr> 
             <tr>
                 <th>7</th>
-                <td>São Paulo</td>
-                <td>9 058 155</td>
+                <td>Pernambuco</td>
+                <td class="num">9 058 155</td>
             </tr> 
             <tr>
                 <th>8</th>
-                <td>São Paulo</td>
-                <td>8 791 688</td>
+                <td>Ceará</td>
+                <td class="num">8 791 688</td>
             </tr> 
             <tr>
                 <th>9</th>
-                <td>São Paulo</td>
-                <td>8 116 132</td>
+                <td>Pará</td>
+                <td class="num">8 116 132</td>
             </tr> 
             <tr>
                 <th>10</th>
-                <td>São Paulo</td>
-                <td>7 609 601</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 609 601</td>
             </tr> 
             <tr>
                 <th>11</th>
-                <td>São Paulo</td>
-                <td>7 055 228</td>
+                <td>Goiás</td>
+                <td class="num">7 055 228</td>
             </tr> 
             <tr>
                 <th>12</th>
-                <td>São Paulo</td>
-                <td>6 775 152</td>
+                <td>Maranhão</td>
+                <td class="num">6 775 152</td>
             </tr> 
             <tr>
                 <th>13</th>
-                <td>São Paulo</td>
-                <td>3 974 495</td>
+                <td>Paraíba</td>
+                <td class="num">3 974 495</td>
             </tr> 
             <tr>
                 <th>14</th>
-                <td>São Paulo</td>
-                <td>3 941 175</td>
+                <td>Amazonas</td>
+                <td class="num">3 941 175</td>
             </tr> 
             <tr>
                 <th>15</th>
-                <td>São Paulo</td>
-                <td>3 833 486</td>
+                <td>Espirito Santo</td>
+                <td class="num">3 833 486</td>
             </tr> 
             <tr>
                 <th>16</th>
-                <td>São Paulo</td>
-                <td>3 658 813</td>
+                <td>Mato Grosso</td>
+                <td class="num">3 658 813</td>
             </tr> 
             <tr>
                 <th>17</th>
-                <td>São Paulo</td>
-                <td>3 302 406</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 302 406</td>
             </tr> 
             <tr>
                 <th>18</th>
-                <td>São Paulo</td>
-                <td>3 269 200</td>
+                <td>Piauí</td>
+                <td class="num">3 269 200</td>
             </tr> 
             <tr>
                 <th>19</th>
-                <td>São Paulo</td>
-                <td>3 127 511</td>
+                <td>Alagoas</td>
+                <td class="num">3 127 511</td>
             </tr> 
             <tr>
                 <th>20</th>
-                <td>São Paulo</td>
-                <td>2 817 068</td>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 068</td>
             </tr> 
             <tr>
                 <th>21</th>
-                <td>São Paulo</td>
-                <td>2 756 700</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 756 700</td>
             </tr> 
             <tr>
                 <th>22</th>
-                <td>São Paulo</td>
-                <td>2 209 558</td>
+                <td>Sergipe</td>
+                <td class="num">2 209 558</td>
             </tr> 
             <tr>
                 <th>23</th>
-                <td>São Paulo</td>
-                <td>1 581 016</td>
+                <td>Rondônia</td>
+                <td class="num">1 581 016</td>
             </tr>             <tr>
                 <th>24</th>
-                <td>São Paulo</td>
-                <td>1 511 459</td>
+                <td>Tocantins</td>
+                <td class="num">1 511 459</td>
             </tr> 
             <tr>
                 <th>25</th>
-                <td>São Paulo</td>
-                <td>830 026</td>
+                <td>Acre</td>
+                <td class="num">830 026</td>
             </tr> 
             <tr>
                 <th>26</th>
-                <td>São Paulo</td>
-                <td>733 508</td>
+                <td>Amapá</td>
+                <td class="num">733 508</td>
             </tr> 
             <tr>
                 <th>27</th>
-                <td>São Paulo</td>
-                <td>636 303</td>
+                <td>Roraima</td>
+                <td class="num">636 303</td>
             </tr> 
         </tbody>
 
         <tfoot>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
